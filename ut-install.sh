@@ -11,6 +11,13 @@ declare -A TYPES=(
     ["ini"]="System"
     ["umx"]="Music"
     ["uax"]="Sounds"
+
+    ["ut2"]="Maps"
+    ["ogg"]="Music"
+    ["ucl"]="System"
+    ["upl"]="System"
+    ["usx"]="StaticMeshes"
+    ["ukx"]="Animations"
 )
 
 declare -a IGNORE=(
