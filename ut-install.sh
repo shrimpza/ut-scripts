@@ -1,4 +1,14 @@
 #!/bin/bash
+#
+# UT99 and UT2004 zip-distributed map/mod installer
+#
+# Extracts the contents of a .zip file, often containing a loose
+# unstructured collection of files, which the user is generally
+# expected to know which file types go into which directories,
+# into an appropriate directory structure.
+#
+# Usage:
+#  ut-install.sh <zip-file> <extract-path>
 
 ZF=$1
 OP=$2
@@ -46,4 +56,3 @@ for i in `zipinfo -1 $ZF`; do
         unzip -qjn "$ZF" "$F" -d "$OP/$TYPE"
     fi
 done
-
